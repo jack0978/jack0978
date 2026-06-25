@@ -1,16 +1,22 @@
-## Hi there 👋
+### 🚀 欢迎来到永久防失联基地
 
-<!--
-**jack0978/jack0978** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+这里是本站的唯一永久防走失主页。请按 `Ctrl+D` 收藏此页。无论遇到任何网络波动，这里永远为您提供最新的回家地址。
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### 🌐 最新可用直连节点 (点击直达)
+- 🟢 **[主干线路 (推荐访问)]** - [https://duojiejie.com]
+
+---
+
+#### 📢 站点最新动态
+* 🔥 **核心优势**：基于 PikPak 网盘构建，支持丝滑在线播放与原画下载保存！
+* ⚡ **更新进度**：保持每日 12 篇高频更新。
+* ✅ **最新完结**：男娘篇已全部更新完毕。
+* 🔜 **下期预告**：糖心传媒篇即将重磅上线，敬请期待！
+
+---
+
+#### 💬 官方联络与防走失
+* ✈️ [点击加入官方 Telegram 频道](https://t.me/你的频道链接)
+* 𝕏 [关注官方 X 账号矩阵](https://x.com/你的账号链接)
