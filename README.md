@@ -1,16 +1,39 @@
-## Hi there 👋
+# 🚀 群芳阁 - 永久防失联基地
 
-<!--
-**jack0978/jack0978** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> 💡 **收藏防走丢：** 强烈建议在键盘上按 `Ctrl + D` (Mac系统按 `Cmd + D`) 或点击浏览器地址栏的 ⭐️ 收藏本页。
+> 🟢 **当前状态：** 所有节点运行正常 (持续维护中)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🌐 最新可用直连节点 (点击直达)
+
+* 🟢 **[极速主站直连通道 (强烈推荐)]** - [https://vip.qunfangs.com](https://vip.qunfangs.com)
+* 🟡 **[终极防失联发布页 (备用保存)]** - [https://qunfangs.com](https://qunfangs.com)
+
+---
+
+### 🛡️ 访问与安全强烈建议 (必看)
+
+* 🚫 **网络环境**：为了您的访问安全与资源畅快加载，**请务必在海外环境打开本站**。
+* 🛑 **防审查推荐**：请务必复制链接到 **Google Chrome**、**Microsoft Edge** 或 **Firefox** 的**无痕/隐私模式**下访问。严禁使用任何内置网址拦截功能的国产浏览器（如夸克、UC、360等），以防被错误拦截或屏蔽。
+
+---
+
+### 🎁 专属福利加成
+
+* 👑 **仅限本站付费用户**：填写邀请码成功并且开通网盘会员后，带截图找客服领取本站 5 天会员。
+* 💾 **PikPak 网盘专属邀请码**：`52092816`
+
+---
+
+### 📢 官方联络与动态防封
+
+遇到任何问题或想获取最新资源预告，请认准以下官方渠道：
+
+* ✈️ **[官方 Telegram 客服 (@qunfangS)](https://t.me/qunfangS)** - 处理开通、售后事宜
+* 𝕏 **[关注官方 X 最新推文动态](https://x.com/qunfangs)** - 获取最新发布进展与紧急防封地址
+
+<br>
+<p align="center">
+  <small>© 2026 群芳阁 · 建议妥善保存本页地址</small>
+</p>
