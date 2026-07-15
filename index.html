@@ -3,47 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎回家 - 群芳阁导航发布页</title>
+    <title>终极防封发布页 - 群芳阁</title>
     <style>
-        body { background-color: #1a1a1a; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; }
-        .container { background-color: #242424; border-radius: 12px; width: 100%; max-width: 600px; padding: 30px; box-sizing: border-box; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
-        .header-title { font-size: 24px; font-weight: bold; color: #ff6b4a; margin-bottom: 10px; text-align: center; }
-        .header-subtitle { color: #a0a0a0; font-size: 14px; margin-bottom: 25px; text-align: center; }
-        .alert-box { text-align: left; padding: 15px; border-radius: 8px; margin-bottom: 15px; font-size: 13px; line-height: 1.5; background-color: #2a2a2a; border-left: 4px solid #444; }
-        .btn { display: block; width: 100%; padding: 14px; margin-bottom: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; border: none; cursor: pointer; }
-        .btn-save { background: #ff5722; color: #fff; }
-        .btn-main { background: #e91e63; color: #fff; }
-        .btn-ultimate { background: #2e7d32; color: #fff; }
-        .btn-row { display: flex; gap: 10px; }
-        .btn-tg { flex: 1; background-color: #0088cc; color: #fff; padding: 14px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; }
-        .btn-x { flex: 1; background-color: #000; border: 1px solid #333; color: #fff; padding: 14px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: bold; }
+        body {
+            background-color: #0d0d0f;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 强制单列上下排版的窄容器 */
+        .vertical-container {
+            background-color: #1c1c1f;
+            border: 1px solid #333;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 480px; 
+            padding: 40px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+
+        .logo-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-area h1 {
+            font-size: 26px;
+            color: #ff5252;
+            margin: 0 0 10px 0;
+        }
+
+        .logo-area p {
+            color: #888;
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 上下堆叠的信息卡片 */
+        .card-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background-color: #252529;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 13.5px;
+            line-height: 1.6;
+            border-left: 4px solid #555;
+        }
+
+        .info-card.save { border-left-color: #ff9800; }
+        .info-card.warn { border-left-color: #f44336; }
+        .info-card.gift { border-left-color: #9c27b0; }
+        .highlight { color: #ffeb3b; font-weight: bold; }
+
+        /* 上下堆叠的按钮组 */
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .v-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: transform 0.1s, opacity 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .v-btn:hover { opacity: 0.9; }
+        .v-btn:active { transform: scale(0.98); }
+        
+        .v-btn-save { background: #ff9800; color: #000; }
+        .v-btn-main { background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); color: #fff; }
+        
+        /* 社交按钮网格，保持一行两个 */
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .s-btn {
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .s-btn-tg { background-color: #2ca5e0; }
+        .s-btn-x { background-color: #000000; border: 1px solid #444; }
+
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-title">🎉 欢迎回家</div>
-        <div class="header-subtitle">请妥善保存本页，防止失联。</div>
-        
-        <div class="alert-box">💡 建议保存本文件到桌面，双击即可直接打开。</div>
 
-        <button onclick="downloadHtml()" class="btn btn-save">💾 一键保存本页防失联</button>
-        <a href="https://vip.qunfangs.com" class="btn btn-main" target="_blank">🚀 极速主站直连通道</a>
-        <!-- 已移除指向自身的循环链接，改为指向 GitHub 主页 -->
-        <a href="https://github.com/jack0978" class="btn btn-ultimate" target="_blank">🛡️ 官方仓库发布页</a>
-        
-        <div class="btn-row">
-            <a href="https://t.me/qunfangS" class="btn btn-tg">✈️ 客服</a>
-            <a href="https://x.com/qunfangs" class="btn btn-x">𝕏 @qunfangs</a>
+    <div class="vertical-container">
+        <!-- 头部区域 -->
+        <div class="logo-area">
+            <h1>🎉 终极防封基地 🎉</h1>
+            <p>感谢下载本站 PikPak 资源<br>请妥善保存此页，作为最终回家指引</p>
+        </div>
+
+        <!-- 信息提示区 (上下排版) -->
+        <div class="card-section">
+            <div class="info-card save">
+                💡 <b>一键保存：</b>建议点击下方按钮，将本页永久保存至本地。
+            </div>
+            <div class="info-card warn">
+                🚫 <b>安全建议：</b>请务必连接代理，并在海外环境下使用 Chrome、Edge 等无审查浏览器访问主站。
+            </div>
+            <div class="info-card gift">
+                🎁 <b>福利加成：</b>本站付费用户填写邀请码开通网盘会员后，找客服领5天会员。<br>
+                PikPak 邀请码： <span class="highlight">52092816</span>
+            </div>
+        </div>
+
+        <!-- 按钮通道区 (上下排版) -->
+        <div class="btn-stack">
+            <button onclick="downloadHtml()" class="v-btn v-btn-save">💾 一键保存本页防失联</button>
+            <a href="https://vip.qunfangs.com" class="v-btn v-btn-main" target="_blank" rel="noopener noreferrer">🚀 极速主站直连通道</a>
+            
+            <!-- 移除了容易造成循环的“终极发布页”按钮，替换为社交媒体矩阵 -->
+            <div class="social-grid">
+                <a href="https://t.me/qunfangS" class="s-btn s-btn-tg" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
+                <a href="https://x.com/qunfangs" class="s-btn s-btn-x" target="_blank" rel="noopener noreferrer">𝕏 @qunfangs</a>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            © 2026 群芳阁 · 终极防失联阵地
         </div>
     </div>
 
     <script>
         function downloadHtml() {
-            var blob = new Blob([document.documentElement.outerHTML], {type: "text/html"});
+            var htmlContent = document.documentElement.outerHTML;
+            htmlContent = '<!DOCTYPE html>\n' + htmlContent;
+            var blob = new Blob([htmlContent], {type: "text/html;charset=utf-8"});
+            var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
-            a.href = URL.createObjectURL(blob);
-            a.download = "群芳阁导航.html";
+            a.href = url;
+            a.download = "群芳阁_终极防失联导航.html";
+            document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            alert("✅ 保存成功！请在您的设备【下载】文件夹中查看。");
         }
     </script>
 </body>
