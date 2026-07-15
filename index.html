@@ -1,39 +1,280 @@
-# 🚀 群芳阁 - 永久防失联基地
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎回家 - 群芳阁导航发布页</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
 
-> 💡 **收藏防走丢：** 强烈建议在键盘上按 `Ctrl + D` (Mac系统按 `Cmd + D`) 或点击浏览器地址栏的 ⭐️ 收藏本页。
-> 🟢 **当前状态：** 所有节点运行正常 (持续维护中)
+        .container {
+            background-color: #242424;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 850px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
 
----
+        .header-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff6b4a;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
 
-### 🌐 最新可用直连节点 (点击直达)
+        .header-subtitle {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
-* 🟢 **[极速主站直连通道 (强烈推荐)]** - [https://vip.qunfangs.com](https://vip.qunfangs.com)
-* 🟡 **[终极防失联发布页 (备用保存)]** - [https://qunfangs.com](https://qunfangs.com)
+        /* 左右排版容器 */
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
 
----
+        .left-panel {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-### 🛡️ 访问与安全强烈建议 (必看)
+        .right-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
 
-* 🚫 **网络环境**：为了您的访问安全与资源畅快加载，**请务必在海外环境打开本站**。
-* 🛑 **防审查推荐**：请务必复制链接到 **Google Chrome**、**Microsoft Edge** 或 **Firefox** 的**无痕/隐私模式**下访问。严禁使用任何内置网址拦截功能的国产浏览器（如夸克、UC、360等），以防被错误拦截或屏蔽。
+        .alert-box {
+            text-align: left;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
 
----
+        .alert-save {
+            background-color: #312117;
+            border-left: 4px solid #ff5722;
+            color: #dcdcdc;
+        }
 
-### 🎁 专属福利加成
+        .alert-warning {
+            background-color: #2a2815;
+            border-left: 4px solid #ffc107;
+            color: #dcdcdc;
+        }
 
-* 👑 **仅限本站付费用户**：填写邀请码成功并且开通网盘会员后，带截图找客服领取本站 5 天会员。
-* 💾 **PikPak 网盘专属邀请码**：`52092816`
+        .alert-welfare {
+            background-color: #24162e;
+            border-left: 4px solid #b388ff;
+            color: #dcdcdc;
+        }
 
----
+        .tag-orange {
+            color: #ff9800;
+            border: 1px solid #ff9800;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 11px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
 
-### 📢 官方联络与动态防封
+        .code-box {
+            background-color: #1a1a1a;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            color: #fff;
+            font-family: monospace;
+            font-size: 14px;
+            margin-left: 5px;
+        }
 
-遇到任何问题或想获取最新资源预告，请认准以下官方渠道：
+        .nav-hint {
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
 
-* ✈️ **[官方 Telegram 客服 (@qunfangS)](https://t.me/qunfangS)** - 处理开通、售后事宜
-* 𝕏 **[关注官方 X 最新推文动态](https://x.com/qunfangs)** - 获取最新发布进展与紧急防封地址
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            transition: opacity 0.2s, transform 0.1s;
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+        }
 
-<br>
-<p align="center">
-  <small>© 2026 群芳阁 · 建议妥善保存本页地址</small>
-</p>
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-save {
+            background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+
+        .btn-main {
+            background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+        }
+
+        .btn-ultimate {
+            background: transparent;
+            color: #4caf50;
+            border: 1px solid #2e4d30;
+            background-color: #1c261e;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-tg {
+            flex: 1;
+            background-color: #0088cc;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .btn-x {
+            flex: 1;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #333333;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #555555;
+            text-align: center;
+        }
+
+        /* 移动端自适应，屏幕小于 768px 时自动变为上下排版 */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .right-panel {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-title">
+            <span>🎉</span> 欢迎回家 <span>🎉</span>
+        </div>
+        <div class="header-subtitle">
+            感谢您下载本站 PikPak 资源。若原有网址无法访问，请通过专属通道进入。
+        </div>
+
+        <div class="content-wrapper">
+            <!-- 左侧：提示与福利区 -->
+            <div class="left-panel">
+                <div class="alert-box alert-save">
+                    💡 <b>保存提示：</b>将本文件永久保存在电脑/手机中，随时双击即可找到我们。
+                </div>
+
+                <div class="alert-box alert-warning">
+                    🚫 <b>安全建议：</b>请务必连接代理在海外环境下使用本站，并使用 Chrome、Edge 等无审查浏览器。
+                </div>
+
+                <div class="alert-box alert-welfare">
+                    🎁 <b>福利加成：</b> <span class="tag-orange">仅限本站付费用户</span><br><br>
+                    填写邀请码成功并且开通网盘会员后，找客服领取本站5天会员。<br><br>
+                    PikPak网盘 邀请码： <span class="code-box">52092816</span>
+                </div>
+            </div>
+
+            <!-- 右侧：按钮与通道区 -->
+            <div class="right-panel">
+                <div class="nav-hint">👇 请选择通道进入</div>
+                
+                <button onclick="downloadHtml()" class="btn btn-save">💾 一键保存本页防失联</button>
+                <a href="https://vip.qunfangs.com" class="btn btn-main" target="_blank" rel="noopener noreferrer">🚀 极速主站直连通道</a>
+                <a href="https://qunfangs.com" class="btn btn-ultimate" target="_blank" rel="noopener noreferrer">🛡️ 终极防失联发布页</a>
+                
+                <div class="btn-row">
+                    <a href="https://t.me/qunfangS" target="_blank" rel="noopener noreferrer" class="btn btn-tg">✈️ 客服</a>
+                    <a href="https://x.com/qunfangs" target="_blank" rel="noopener noreferrer" class="btn btn-x">𝕏 @qunfangs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2026 群芳阁 · 本地导航指引 · 建议妥善保存
+        </div>
+    </div>
+
+    <script>
+        function downloadHtml() {
+            var htmlContent = document.documentElement.outerHTML;
+            htmlContent = '<!DOCTYPE html>\n' + htmlContent;
+            var blob = new Blob([htmlContent], {type: "text/html;charset=utf-8"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = "群芳阁_防失联导航.html";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            alert("✅ 保存成功！请在您的电脑或手机的【下载】文件夹中查看。以后双击该文件即可直接打开本导航！");
+        }
+    </script>
+</body>
+</html>
